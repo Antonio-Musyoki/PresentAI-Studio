@@ -1,27 +1,25 @@
 {
   "name": "presentai-studio",
   "version": "0.1.0",
-  "description": "Enterprise AI-powered presentation generator",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "description": "AI-powered presentation creation and management platform",
   "scripts": {
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "build": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "clean": "turbo run clean && rm -rf node_modules"
+    "clean": "turbo run clean && rm -rf node_modules .turbo"
+  },
+  "dependencies": {
+    "turbo": "latest"
   },
   "devDependencies": {
-    "turbo": "^1.10.0",
-    "prettier": "^3.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
   },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
-  }
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
