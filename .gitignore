@@ -14,6 +14,7 @@ pnpm-lock.yaml
 dist/
 build/
 out/
+.turbo/
 
 # IDE
 .vscode/
@@ -26,6 +27,7 @@ out/
 # Testing
 coverage/
 .nyc_output/
+.jest_cache/
 
 # Logs
 logs/
@@ -54,3 +56,7 @@ public/uploads/
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# Misc
+.turbo/
+.eslintcache
